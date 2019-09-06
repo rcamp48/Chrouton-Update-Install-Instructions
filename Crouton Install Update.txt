@@ -26,9 +26,9 @@ Installng Linux The easy way on Samsung (assuming you want an Ubuntu LTS with Xf
 
 13) If you want to keep the 'xorg' xmethod as the default then pick it first:
 
-14) sudo sh /usr/local/bin/crouton -t xorg,xiwi -u -r xenial
+14) sudo sh /usr/local/bin/crouton -t xorg,xiwi -u -n xenial
 
 15) Finally execute this step to update the xenial install with xfce:
 
-16) sudo sh /usr/local/bin/crouton -u -t xfce -r xenial
+16) sudo sh /usr/local/bin/crouton -u -t xfce -n xenial
 
