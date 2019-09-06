@@ -22,11 +22,11 @@ Installng Linux The easy way on Samsung (assuming you want an Ubuntu LTS with Xf
 
 11) Optonal : Add 'xiwi' or any other target to an existing chroot with the -u option:
 
-12) sudo sh /usr/local/bin/crouton -t xiwi -u -n xenial
+12) sudo sh /usr/local/bin/crouton -t xiwi -u -r xenial
 
 13) If you want to keep the 'xorg' xmethod as the default then pick it first:
 
-14) sudo sh /usr/local/bin/crouton -t xorg,xiwi -u -n xenial
+14) sudo sh /usr/local/bin/crouton -t xorg,xiwi -u -r xenial
 
 15) Finally execute this step to update the xenial install with xfce:
 
