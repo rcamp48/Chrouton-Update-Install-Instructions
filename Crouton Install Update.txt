@@ -1,0 +1,34 @@
+Installng Linux The easy way on Samsung (assuming you want an Ubuntu LTS with Xfce)
+
+1) Download crouton
+
+2) Open a shell (Ctrl+Alt+T, type shell and hit enter)
+
+3) Copy the installer to an executable location by running 
+
+4) sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton
+
+5) Now that it's executable, run the installer itself:
+
+6) sudo /usr/local/bin/crouton -r xenial -t core
+
+7) Next you have to enter-chroot and install the xserver with the following commands:
+
+8) sudo sh enter-chroot
+
+9) sudo apt install xserver-xorg-core xserver-xorg-video-dummy xdiagnose
+
+10) exit
+
+11) Optonal : Add 'xiwi' or any other target to an existing chroot with the -u option:
+
+12) sudo sh /usr/local/bin/crouton -t xiwi -u -n xenial
+
+13) If you want to keep the 'xorg' xmethod as the default then pick it first:
+
+14) sudo sh /usr/local/bin/crouton -t xorg,xiwi -u -n xenial
+
+15) Finally execute this step to update the xenial install with xfce:
+
+16) sudo sh /usr/local/bin/crouton -u -t xfce -r xenial
+
